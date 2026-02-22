@@ -27,7 +27,7 @@ export default async function BlogPage() {
 
           {/* Posts List */}
           <div className="flex flex-col gap-12">
-            {posts!.map((post) => (
+            {posts?.map((post) => (
               <Link 
                 key={post.slug} 
                 href={`/dashboard/blog/${post.slug}`}
