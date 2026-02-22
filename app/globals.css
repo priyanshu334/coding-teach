@@ -124,3 +124,14 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer base {
+  body {
+    @apply font-sans antialiased tracking-[-0.01em];
+  }
+
+  h1, h2, h3, h4 {
+    /* Tech fonts look better when they are tight and slightly bold */
+    @apply font-sans font-bold tracking-[-0.03em] leading-tight;
+  }
+}
